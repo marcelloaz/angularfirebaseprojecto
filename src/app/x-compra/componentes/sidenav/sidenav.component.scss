@@ -1,0 +1,204 @@
+.app-sidenav-container {
+  flex: 1;
+  position: fixed;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  //background-color: blue($color: #000000);
+}
+
+.mat-drawer {
+  position: relative;
+  z-index: 4;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 3;
+  outline: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transform: translate3d(-100%, 0, 0);
+}
+
+// .mat-drawer-side {
+//   border-right: solid 1px #e97a7d;
+// }
+
+.mat-drawer {
+  //background-color: #000000c9;
+  color: rgba(11, 34, 165, 0.87) !important;
+}
+
+.mat-elevation-z10 {
+  box-shadow: 0 6px 6px -3px rgba(187, 28, 28, 0.157),
+    0 10px 14px 1px rgba(241, 138, 138, 0.14),
+    0 4px 18px 3px rgba(199, 134, 134, 0.12);
+}
+
+.mat-drawer-container {
+  background-image: url("./../../../../assets/backgrond.svg");
+  background-color: #009e9d;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.mat-nav-list a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.app-sidenav-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.app-sidenav {
+  width: 272px;
+}
+
+.wrapper {
+  margin: 0px;
+}
+
+small {
+  color: rgb(185, 174, 152);
+}
+
+.flex-item {
+  border: rgba(0, 0, 0, 0.87) solid 1px;
+}
+
+.flex-item.ul {
+  font-size: small;
+}
+
+.mat-drawer-container {
+  z-index: 2;
+  // border-right-color: #e9b3b5;
+  //-webkit-box-shadow: 5px 0px 11px -4px #333333;
+  //box-shadow: 5px 0px 11px -4px #333333;
+  margin: 0;
+  padding: 0;
+  // background: #d16367;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  // background-image: url('./../../../../assets/linguicabook.jpg');
+  // background-image: linear-gradient(#d86c70 .1em, transparent .1em), linear-gradient(90deg, #d86c70 .1em, transparent .1em);
+  // background-size: 3em 3em;
+}
+
+// fundo grid orange
+
+// .mat-drawer.mat-drawer-side {
+//     z-index: 2;
+//     border-right-color: #e65f64;
+//     -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//     box-shadow: 5px 0px 11px -4px #7c6c6c;
+//     margin: 0;
+//     padding: 0;
+//     background: #c7b7b7;
+//     background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//     background-size: 3em 3em;
+// }
+
+// @media screen and (min-width: 60em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media screen and (min-width: 10em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media screen and (min-width: 40em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media screen and (min-width: 50em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media screen and (min-width: 44.44em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media screen and (min-width: 52em) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         border-right-color: #e65f64;
+//         -webkit-box-shadow: 5px 0px 11px -4px rgb(33, 16, 16);
+//         box-shadow: 5px 0px 11px -4px #7c6c6c;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }
+
+// @media all and (max-width: 800px) {
+//     .mat-drawer.mat-drawer-side {
+//         z-index: 2;
+//         //border-right-color: #e9b3b5;
+//         //-webkit-box-shadow: 5px 0px 11px -4px #333333;
+//         //box-shadow: 5px 0px 11px -4px #333333;
+//         margin: 0;
+//         padding: 0;
+//         background: #e16f72;
+//         background-image: linear-gradient(rgb(231, 119, 124) .1em, transparent .1em), linear-gradient(90deg, rgb(231, 119, 124) .1em, transparent .1em);
+//         background-size: 3em 3em;
+//     }
+// }

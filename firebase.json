@@ -1,0 +1,21 @@
+{
+  "database": {
+    "rules": "administradorDatabase"
+  },
+  "hosting": {
+    "public": "dist/VendaFacil",
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "ignore": [
+      "firebase.json",
+      "**/node_modules/**"
+    ]
+  },
+  "functions": {
+    "source": "functions"
+  }
+}

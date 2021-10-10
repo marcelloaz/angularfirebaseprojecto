@@ -1,0 +1,60 @@
+[debug] [2021-10-09T23:20:48.780Z] ----------------------------------------------------------------------
+[debug] [2021-10-09T23:20:48.780Z] Command:       C:\nodejs\node.exe C:\Users\ADM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-10-09T23:20:48.780Z] CLI Version:   9.19.0
+[debug] [2021-10-09T23:20:48.780Z] Platform:      win32
+[debug] [2021-10-09T23:20:48.780Z] Node Version:  v10.15.3
+[debug] [2021-10-09T23:20:48.780Z] Time:          Sat Oct 09 2021 20:20:48 GMT-0300 (GMT-03:00)
+[debug] [2021-10-09T23:20:48.780Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-09T23:20:48.923Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-09T23:20:48.923Z] > authorizing via signed-in user (marcelloaze@gmail.com)
+[debug] [2021-10-09T23:20:48.939Z] [iam] checking project vendafacil-2d9db for permissions ["firebase.projects.get"]
+[debug] [2021-10-09T23:20:48.939Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vendafacil-2d9db:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-10-09T23:20:49.976Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 23:20:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=736","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "14" doesn't match your global version "10" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"14\" doesn't match your global version \"10\""}}
+[debug] [2021-10-09T23:20:51.023Z] defaultcredentials: writing to file C:\Users\ADM\AppData\Roaming\firebase\marcelloaze_gmail_com_application_default_credentials.json
+[debug] [2021-10-09T23:20:51.025Z] DEBUG: Setting GAC to C:\Users\ADM\AppData\Roaming\firebase\marcelloaze_gmail_com_application_default_credentials.json
+[debug] [2021-10-09T23:20:51.028Z] > refreshing access token with scopes: []
+[debug] [2021-10-09T23:20:51.028Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T23:20:51.240Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 09 Oct 2021 23:20:31 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T23:20:51.255Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig [none]
+[debug] [2021-10-09T23:20:52.314Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig 200
+[debug] [2021-10-09T23:20:52.330Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig {"projectId":"vendafacil-2d9db","databaseURL":"https://vendafacil-2d9db.firebaseio.com","storageBucket":"vendafacil-2d9db.appspot.com","locationId":"southamerica-east1"}
+[debug] [2021-10-09T23:20:52.346Z] [functions] Watching "C:\projeto\vendaFacil\functions" for Cloud Functions...
+[debug] [2021-10-09T23:20:52.361Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T23:20:52.361Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-10-09T23:20:52.361Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T23:20:52.361Z] DEBUG: [worker-~diagnostic~-a55da2fe-9a0a-4058-97d1-91848bfe2666]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\1292
+[debug] [2021-10-09T23:20:52.361Z] DEBUG: [worker-~diagnostic~-a55da2fe-9a0a-4058-97d1-91848bfe2666]: BUSY
+[debug] [2021-10-09T23:20:52.927Z] DEBUG: [runtime-status] [1292] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T23:20:52.943Z] DEBUG: [runtime-status] [1292] Disabled runtime features: undefined
+[debug] [2021-10-09T23:20:52.943Z] DEBUG: [runtime-status] [1292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T23:20:52.943Z] DEBUG: [runtime-status] [1292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T23:20:52.959Z] DEBUG: [runtime-status] [1292] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T23:20:52.959Z] DEBUG: [runtime-status] [1292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T23:20:53.084Z] DEBUG: [runtime-status] [1292] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T23:20:53.124Z] [functions[us-central1-addUsuariosPush]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.124Z] [functions[us-central1-addCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.124Z] [functions[us-central1-updateProduto]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.124Z] [functions[us-central1-updateCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-deleteCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-changeCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-cardAdded]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-cardUpdated]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-cardDeleted]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-cardChanged]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-09T23:20:53.125Z] [functions[us-central1-addUsuario]] http function initialized (http://localhost:5000/vendafacil-2d9db/us-central1/addUsuario).
+[debug] [2021-10-09T23:20:53.126Z] [functions[us-central1-MsgUsuario]] http function initialized (http://localhost:5000/vendafacil-2d9db/us-central1/MsgUsuario).
+[debug] [2021-10-09T23:20:53.126Z] [functions[us-central1-Notificar]] http function initialized (http://localhost:5000/vendafacil-2d9db/us-central1/Notificar).
+[debug] [2021-10-09T23:20:53.126Z] [functions[us-central1-addCard]] http function initialized (http://localhost:5000/vendafacil-2d9db/us-central1/addCard).
+[info] i  functions: Loaded functions: addUsuariosPush, addCategoria, updateProduto, updateCategoria, deleteCategoria, changeCategoria, cardAdded, cardUpdated, cardDeleted, cardChanged, addUsuario, MsgUsuario, Notificar, addCard 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2021-10-09T23:20:53.141Z] DEBUG: [worker-~diagnostic~-a55da2fe-9a0a-4058-97d1-91848bfe2666]: IDLE

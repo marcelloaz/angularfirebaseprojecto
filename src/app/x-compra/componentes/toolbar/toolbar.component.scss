@@ -1,0 +1,128 @@
+.flexExpand {
+  flex: 1 1 auto;
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 16px;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #0059ff;
+}
+raised-button {
+  background-color: #0059ff;
+}
+.mat-raised-button {
+  box-shadow: none;
+  //inset 25px 3px 16px 7px #c2181800,0 2px 2px 0 rgb(255 254 244 / 30%),0 1px 5px 0 rgb(255 249 0 / 12%);
+}
+
+.mat-raised-button a:hover {
+  box-shadow: inset 25px 3px 16px 7px #c2181800,
+    0 2px 2px 0 rgb(255 254 244 / 30%), 0 1px 5px 0 rgb(255 249 0 / 12%);
+}
+
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  background-color: #0443b8;
+}
+
+.mat-fab.mat-primary,
+.mat-flat-button.mat-primary,
+.mat-mini-fab.mat-primary,
+.mat-raised-button.mat-primary {
+  color: #fffdfd;
+}
+
+.mat-raised-button {
+  position: fixed;
+  box-sizing: border-box;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  outline: 0;
+  border: none;
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: baseline;
+  text-align: center;
+  margin: 0;
+  min-width: 8px;
+  line-height: 42px;
+  padding: -8px 0px 0px 0px;
+  /* border-radius: 18px; */
+  overflow: visible;
+  transform: translate3d(0, 0, 0);
+  transition: background 0.4s cubic-bezier(0.25, 0.8, 0.25, 1),
+    box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 10px;
+}
+
+.mat-fab,
+.mat-flat-button,
+.mat-mini-fab,
+.mat-raised-button {
+  color: #fff;
+  background-color: #424242;
+}
+
+.mat-badge {
+  position: relative;
+}
+
+.mat-button,
+.mat-fab,
+.mat-flat-button,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-stroked-button {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.buttonMenu {
+  margin: 10px !important;
+  appearance: button;
+  -webkit-writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  color: -internal-light-dark(black, white);
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  background-color: -internal-light-dark(rgb(239, 239, 239), rgb(35, 5, 207));
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(21, 1, 129));
+  border-image: initial;
+}
+
+.buttonlogin {
+  appearance: button;
+  align-items: flex-start;
+  cursor: default;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+  padding: 1px 6px;
+}

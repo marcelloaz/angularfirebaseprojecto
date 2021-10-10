@@ -1,0 +1,76 @@
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+
+.example-full-80height {
+  height: 80%;
+}
+
+td {
+  padding-right: 8px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input[type="file" i] {
+  appearance: initial;
+  // background-color: rgba(136, 36, 36, 0.959);
+  cursor: pointer;
+  align-items: baseline;
+  color: inherit;
+  text-overflow: ellipsis;
+  white-space: pre;
+  text-align: start !important;
+  padding: initial;
+  // border: solid 1px crimson;
+  overflow: hidden;
+  padding: 1em;
+}
+
+.container {
+  // margin: 15px;
+  height: 200px;
+  // border: 2px solid red;
+}
+
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #212121;
+  color: #fff;
+}
+
+.mat-input-element {
+  font: inherit;
+  background: 0 0;
+  color: currentColor;
+  border: solid 1px #000;
+  outline: 0;
+  padding: 15px 2px 13px 7px;
+  margin: 8px 8px 8px -2px;
+  width: 100%;
+  font-size: unset;
+  max-width: 98%;
+  border-radius: 9px;
+  vertical-align: bottom;
+  text-align: inherit;
+  background-color: #50504f;
+}
+
+.mat-card {
+  background: #2d2d2d;
+  color: #fff;
+}

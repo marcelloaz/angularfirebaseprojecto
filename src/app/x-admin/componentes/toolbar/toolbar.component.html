@@ -1,0 +1,89 @@
+
+<mat-toolbar color="primary">
+ 
+    <div class="mat-toolbar-single-row">
+        <!-- <button mat-icon-button>
+<mat-icon>menu</mat-icon>
+</button> -->
+        <!-- <img width="150px" style="margin-right: 3em; margin-left: 3em;" src="./../../../../assets/logoNomeBranca.svg"> -->
+        
+        <span class="menu-spacer"></span>
+        <div>
+            <!-- <a mat-button [routerLink]="'/admin'"> Itens Cadastrados </a> -->
+            <span class="flexExpand"></span>
+            <a mat-button [routerLink]="'/admin/'"> Produtos</a>
+            <a mat-button [routerLink]="'/admin/categoria'"> Categorias</a>
+            <a mat-button [routerLink]="'/admin/signup'"> Usuário</a>
+
+            <a mat-button [routerLink]="'/'"> Site</a>
+
+            <a mat-button [routerLink]="'/'"> Sair</a>
+            <span class="flexExpand"></span>
+        </div>
+
+
+
+        <!-- <div *ngIf="!userLogado; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+         
+        </ng-template>
+        <ng-template #elseBlock>
+  <a mat-button [routerLink]="'/admin/'"> Produtos</a>
+              <a mat-button [routerLink]="'/admin/categoria'"> Categorias</a>
+              <a mat-button [routerLink]="'/admin/signup'"> Usuário</a>
+  
+              <a mat-button [routerLink]="'/'"> Site</a>
+          <span class="flexExpand"></span>
+        
+
+        </ng-template> --></div>
+    
+
+    <mat-toolbar-row style="background-color: rgb(61, 61, 61);">
+        <!-- <img width="150px" style="margin-right:2em;" src="./../../../../assets/blackPig.svg"> -->
+    
+        <div *ngIf="!userLogado; then thenBlock else elseBlock"></div>
+        <ng-template #thenBlock>
+          <div fxFlex>
+            <div>
+            <span style="font-size: 22px;">Administrativo</span>
+            <span class="flexExpand"></span>
+          </div>
+        </div>
+        </ng-template>
+        <ng-template #elseBlock>
+          <div fxFlex>
+            <div>
+            <span style="font-size: 22px;">Administrativo</span>
+            <span class="flexExpand"></span>
+            <div>
+              <small>Olá </small>
+             <button  mat-raised-button color="primary" [routerLink]="[ '/admin']">
+              <span>{{userLogado}}</span>
+            </button>
+          </div>
+          </div>
+         
+        </div>
+        </ng-template>
+         
+     
+     
+   
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- <mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon"
+     >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Senhor Bacon</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar> -->

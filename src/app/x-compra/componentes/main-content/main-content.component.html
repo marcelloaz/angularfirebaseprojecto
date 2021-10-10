@@ -1,0 +1,106 @@
+
+
+ <div  fxLayout="column">
+    <!-- <img style="max-width: 25%;" src="./../assets/efeit_estrelas.svg"> -->
+   
+    <mat-card style="border-radius: 0px; box-shadow: 0px 0px 2px 2px rgba(90, 0, 235, 0.836) inset; ">
+        <!-- <h1 style="color:rgb(255, 255, 255); font-size: xx-large; margin: 1em;">Universal App</h1> -->
+      <!-- <img #divMouseOver style="max-width: 25%;" src="./../assets/efeit_estrelas.svg">
+      <img style="max-width: 25%;" src="./../assets/efeit_estrelas.svg">
+      <img style="max-width: 25%;" src="./../assets/efeit_estrelas.svg">
+      <img style="max-width: 25%;" src="./../assets/efeit_estrelas.svg"> -->
+    
+      <img  #divMouseOver style="max-width: 25%;" src="./../assets/efeit_estrelas.svg">
+     
+      
+    </mat-card>
+</div>
+<div *ngIf="tutorials; then thenBlock else elseBlock"></div>
+
+<ng-template #thenBlock>
+
+<div class="section-content vcenter-container">
+    <div class="vcenter">
+        <div >
+          
+          
+            <section class="some-area fill-height-or-more">
+                <div>
+                    <mat-card-content>
+                        <br>
+                        <!-- <h1>Alugue seu eletronico e recebe em casa</h1> -->
+                        <div class="flex-container" fxLayout="column" class="cards">
+
+
+                            <a #divMouseOver *ngFor="let item of tutorials">
+
+                                <div id="cardid" #someVar class="card">
+                                    <div fxLayoutAlign="center stretch" class="card-header">
+                                        <!-- style=" background-image: url('{./../../../../assets/almondegasemrecheio.jpg}');" -->
+                                        <img class="imagemCardHome" loading="lazy" [src]="item.imagemURL" alt="" />
+                                    </div>
+                                    <div fxLayout="row" class="card-header" id="card_delimiter">
+
+                                        <div style="font-size: large; max-width: -0.2em; padding-top: 0.4em;  margin-bottom: 0.2em; color: #2b2b2b; font-weight: bold;"
+                                            fxFlex="20">
+                                            {{item?.nome}}
+                                        </div>
+
+                                        <div mat-divider></div>
+
+                                        <div style="font-size: x-large; max-width: -0.2em;  margin-bottom: 0.2em; color: #3c6cf0; font-weight: bold;"
+                                            fxFlex="20">
+                                            R$ {{item?.valorFormatado}}
+                                        </div>
+
+                                        <div fxLayout="row" fxLayoutAlign="center center">
+
+                                            <button (click)="AdiciarItemCarrinho(item.id)" mat-flat-button
+                                            color="default">
+                                            <mat-icon>add_shopping_cart</mat-icon> 
+                                        </button>
+                                        <button (click)="AdiciarItemCarrinho(item.id)" mat-flat-button
+                                        color="default">
+                                        <mat-icon>description</mat-icon> 
+                                    </button>
+                                        <button (click)="AdiciarItemCarrinho(item.id)" mat-flat-button
+                                        color="default">
+                                        <mat-icon>calendar_today</mat-icon> 
+                                    </button>
+                                        </div>
+                                       
+                                        
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                    </mat-card-content>
+                </div>
+
+
+                <div>
+                    <div style="opacity: 90%; min-height: 8em;">
+                        <div #divTexto1 style="padding: 2em;">
+                            <p> Copyright © 2021</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <br>
+        </div>
+    </div>
+</div>
+</ng-template>
+
+<ng-template #elseBlock>
+<div class="section-content vcenter-container">
+    <div class="vcenter">
+        <section id="home" class="centralize">
+            <mat-spinner></mat-spinner>
+        </section>
+    </div>
+</div>
+
+</ng-template>

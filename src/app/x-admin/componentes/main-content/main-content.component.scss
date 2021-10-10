@@ -1,0 +1,395 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-container {
+  cursor: pointer;
+}
+
+@media all and (max-width: 800px) {
+  .flex-container {
+    justify-content: flex-start;
+  }
+}
+
+mat-form-field.mat-form-field {
+  font-size: 12px;
+  width: 100%;
+}
+
+.flex-item {
+  padding: 0px;
+  width: 100%;
+  //height: 230;
+  border-bottom: solid 1px #e97a7d;
+  box-shadow: 0em 1em 3em #e97a7d;
+  border-radius: 2px 2px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  //background-image: url('./../../../../assets/linguicabook.jpg');
+}
+
+.flex-item-button {
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+  background-color: white;
+  opacity: 80%;
+}
+
+// mat-form-field {
+//     width: 92%;
+//   }
+// #btnSearch{
+//        height: 53px;
+//        margin: 20px;
+//   }
+::ng-deep.mat-form-field-ripple {
+  /*change color of underline when focused*/
+  background-color: #d46d70 !important;
+}
+
+::ng-deep .mat-form-field-underline,
+::ng-deep .mat-form-field-ripple {
+  background-color: #d46d70 !important;
+  width: 100%;
+  border-bottom: solid 1px #e97a7d;
+  box-shadow: 0em 1em 3em #e97a7d;
+}
+
+//input outline color
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  color: #e97a7d !important;
+  // opacity: 1!important;
+}
+
+//mat-input focused color
+::ng-deep
+  .mat-form-field-appearance-outline.mat-focused
+  .mat-form-field-outline-thick {
+  color: #e97a7d !important;
+}
+
+// mat-input error outline color
+::ng-deep
+  .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid
+  .mat-form-field-outline-thick {
+  color: #e97a7d !important;
+  opacity: 0.8 !important;
+}
+
+// mat-input carent color
+// ::ng-deep .mat-input-element {
+//     caret-color: #e97a7d!important;
+// }
+
+// mat-input error carent color
+// ::ng-deep .mat-form-field-invalid .mat-input-element,
+// .mat-warn .mat-input-element {
+//   caret-color: #e97a7d !important;
+// }
+
+button.mat-stroked-button {
+  font-size: 14px;
+  height: 45px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+// .mat-card {
+//   margin-top: 20px;
+// // background-color: white;
+// opacity: 98%;
+// border: 1px solid #993c3f;
+// border-radius: 0px;
+// margin: 0px;
+// }
+// .mat-card {
+//     background: #842427;
+//     color: rgba(0,0,0,.87);
+// }
+// ==============item card
+
+/*--------------------------------------------------------------
+Layouts
+--------------------------------------------------------------*/
+
+.centered {
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+  .centered {
+    max-width: 52em;
+  }
+}
+
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+
+.masthead {
+  background: hsl(0, 0%, 90%);
+}
+
+.site-title {
+  margin: 0 0 1em;
+  padding: 1em 0;
+  font-size: 0.5em;
+  text-align: center;
+  color: black;
+}
+
+@media screen and (min-width: 44.44em) {
+  .site-title {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  .site-title {
+    font-size: 2.5em;
+  }
+}
+
+.site-title a {
+  color: hsl(5, 45%, 95%);
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  text-decoration: underline;
+}
+
+/* Card Based Layout - Base styles */
+
+.masthead {
+  background: hsl(0, 0%, 20%);
+}
+
+.site-title {
+  color: rgb(24, 12, 12);
+}
+
+.card {
+  //background: #fff;
+  border-radius: 10px 10px 0px 0px;
+  margin: 15px;
+  color: black;
+  margin: 2em;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+  //border: #a1383c solid 1px;
+  //border-radius: 10px;
+}
+
+.card a:hover {
+  //border: #c05558 solid 1px;
+  //border-radius: 10px 10px 0px 0px;
+  //box-shadow: 0 6px 6px -3px rgba(77, 8, 8, 0.534), 0 10px 14px 1px rgba(241, 138, 138, 0.14), 0 4px 18px 3px rgba(255, 234, 234, 0.534);
+}
+
+.card-button {
+  width: 100%;
+  height: 20px;
+}
+
+.card img {
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.card-header {
+  position: relative;
+  height: 18em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  //background-color: rgb(121 86 86 / 50%);
+  background-blend-mode: overlay;
+  border-radius: 10px 10px 0px 0px;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+
+.card_titulo {
+  margin: 0px;
+  padding: 1em 0em 0em 0em;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mat-card {
+  background: hsla(0, 0%, 33%, 0.089);
+  color: #c0bdbd;
+  // margin: 0em 2em 2em 2em;
+}
+
+#card_delimiter {
+  background-color: #fff;
+  height: 8em;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.card-content {
+  padding: 1.4em;
+}
+
+.card-content h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: normal;
+}
+
+.card-content p {
+  font-size: 98%;
+}
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    justify-content: space-between;
+    margin-top: 1em;
+  }
+  .card {
+    // background-color: #d5d9de;
+    border: 1px solid #a9acb0;
+    color: black;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    margin: 1em;
+    padding: 0.2em;
+    //border-radius: 68px;
+    // border-radius: 4px;
+    margin: 2px 2px 10px 2px;
+    // padding: 70px 41px 70px 41px;
+  }
+  .card-header {
+    position: relative;
+    height: 15em;
+    width: 240px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(121 86 86 / 50%);
+    background-blend-mode: overlay;
+  }
+  .conteudo1 {
+    background-color: #fff;
+    height: 8em;
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .cards {
+    margin-top: inherit;
+  }
+  .card {
+    flex-flow: row wrap;
+    color: black;
+    margin: 1em;
+    background-color: white;
+    padding: 0.2em;
+  }
+  .card-header {
+    position: relative;
+    height: 15em;
+    width: 240px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(121 86 86 / 50%);
+    background-blend-mode: overlay;
+    border-radius: 10px 10px 0px 0px;
+    //margin: 0px 10px 0px 10px;
+  }
+}
+
+.bg_fixedHome {
+  margin-top: 40px;
+  border-top: tomato solid 2px;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+}
+
+.bg_fixeEffect {
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.404);
+}
+
+table {
+  width: 100%;
+  margin-top: 0em;
+}
+
+.child-1 {
+  background-color: orange;
+}
+
+.child-2 {
+  background-color: yellow;
+}
+
+.child-3 {
+  background-color: green;
+}
+
+.container {
+  margin: 15px;
+  height: 200px;
+  border: 2px solid red;
+}
+
+.flexExpand {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #212121;
+  color: #fff;
+}
+.mat-dialog-container {
+  display: block;
+  padding: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: auto;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  max-height: inherit;
+}

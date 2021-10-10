@@ -1,0 +1,91 @@
+<app-toolbar></app-toolbar>
+
+<mat-card-content>
+   
+    <div>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <div>
+                    <h3>🔥 Ofertas 🔥</h3>
+                </div>
+                <span class="flexExpand"></span>
+                <div>
+                    <button (click)="AdicionarDialog()" style="margin:2em;" mat-mini-fab color="accent" aria-label="Example icon button with a bookmark icon">
+                <mat-icon>add</mat-icon>
+              </button>
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        
+        <table mat-table [dataSource]="tutorials " class="mat-elevation-z8">
+
+            <ng-container matColumnDef="IMG">
+                <th mat-header-cell *matHeaderCellDef> </th>
+                <td style="min-width: 2em;" mat-cell *matCellDef="let element">
+                    <img width="50px" style="margin:0.2em; padding: 0.3em;" [src]="element.imagemURL" alt="" />
+                </td>
+            </ng-container>
+
+            <!-- <ng-container matColumnDef="key">
+                <th mat-header-cell *matHeaderCellDef> key </th>
+                <td style="max-width: 3em; min-width: 3em;" mat-cell *matCellDef="let element">
+                    <p style="color: chartreuse; padding: 1em;">{{element.key}}</p>
+                </td>
+            </ng-container> -->
+
+            <ng-container matColumnDef="Titulo">
+                <th mat-header-cell *matHeaderCellDef> Titulo </th>
+                <td style="min-width: 2em;" mat-cell *matCellDef="let element">
+                    <p style="color: chartreuse; padding: 0.3em;">{{element.nome}}</p>
+                </td>
+            </ng-container>
+            <ng-container matColumnDef="Detalhe">
+                <th mat-header-cell *matHeaderCellDef> Detalhe </th>
+                <td mat-cell *matCellDef="let element" style="padding: 1em; max-width: 70%;"> {{element.detalhe}} </td>
+            </ng-container>
+            <!-- <ng-container matColumnDef="Quantidade">
+                <th mat-header-cell *matHeaderCellDef style="padding: 1em;"> Quantidade </th>
+                <td style="max-width: 1em;" mat-cell *matCellDef="let element"> {{element.quantidade}} </td>
+            </ng-container> -->
+            <ng-container matColumnDef="Valor">
+                <th mat-header-cell *matHeaderCellDef style="padding: 1em;"> Valor </th>
+                <td style="max-width: 3em;" mat-cell *matCellDef="let element">
+                    R$ {{element.valorFormatado}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="Acao">
+                <th mat-header-cell *matHeaderCellDef style="padding: 1em;"> Ação </th>
+                <td style="max-width: 3em;" mat-cell *matCellDef="let element">
+
+                    <button (click)="getJobsLessThanPrice(element.key)" mat-button style="cursor: pointer;">
+                    <mat-icon>edit</mat-icon>
+                   </button>
+
+                    <!-- <span style="padding: 1em;" class="flexExpand"><mat-icon>new_releases</mat-icon></span> -->
+                    <button (click)="deleteTutorial(element.key)" mat-button style="cursor: pointer;">
+                  <mat-icon>disabled_by_default</mat-icon>
+                 </button>
+
+
+                    <!-- <span style="padding: 1em;" class="flexExpand"><mat-icon>flaky</mat-icon></span> -->
+                </td>
+            </ng-container>
+
+
+
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+
+
+    </div>
+    <br>
+
+    <mat-divider></mat-divider>
+
+    <br>
+
+</mat-card-content>
+<br>

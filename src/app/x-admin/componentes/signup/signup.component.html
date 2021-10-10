@@ -1,0 +1,74 @@
+
+  <br>
+  <br>
+<mat-card>
+    <mat-card-content>
+
+        <!-- <img style="cursor: pointer; margin: 0 auto;" (click)="goHomeLoja()" width="150px" src="../../../../assets/logoPrincipal.svg"> -->
+        <form [formGroup]="signupForm" autocomplete="off" novalidate (ngSubmit)="cadastrar(signupForm.value)">
+            <h2 style="color: black;">Novo Cadastro</h2>
+            <!-- <mat-error *ngIf="loginInvalid">
+            O nome de usuário e a senha não foram reconhecidos
+        </mat-error> -->
+            <mat-form-field>
+                <input matInput placeholder="Nome Completo" id="nome" formControlName="nome" [(ngModel)]="signup.Nome" required>
+                <mat-hint align="end">Aceita no máximo 60 caracter.</mat-hint>
+                <mat-error *ngIf="hasError('nome', 'required')">Nome é obrigatório</mat-error>
+                <mat-error *ngIf="hasError('nome', 'maxlength')">Não é permitido mais de 60 caracteres.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Email" id="email" type="email" formControlName="email" [(ngModel)]="signup.Email" required>
+                <mat-hint align="end">Aceita no máximo 60 caracter.</mat-hint>
+                <mat-error *ngIf="hasError('email', 'required')">Email é obrigatório</mat-error>
+                <mat-error *ngIf="hasError('email', 'email')">Email inválido</mat-error>
+                <mat-error *ngIf="hasError('email', 'maxlength')">Não é permitido mais de 60 caracteres.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput [matDatepicker]="pickerdtNiver" formControlName="datanascimento" id="datanascimento" placeholder="Data de nascimento" [(ngModel)]="signup.DataNascimento" required readonly (click)="pickerdtNiver.open()">
+                <mat-datepicker-toggle matSuffix [for]="pickerdtNiver"></mat-datepicker-toggle>
+                <mat-datepicker #pickerdtNiver></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Senha" id="senha" type="password" formControlName="senha" [(ngModel)]="signup.Password1" required>
+                <mat-hint align="end">Aceita no máximo 7 caracter.</mat-hint>
+                <mat-error *ngIf="hasError('senha', 'required')">Senha é obrigatória</mat-error>
+                <mat-error *ngIf="hasError('senha', 'maxlength')">Não é permitido mais de 7 caracteres.</mat-error>
+                <mat-error *ngIf="hasError('senha', 'minlength')">Não é permitido menos de 4 caracteres.</mat-error>
+            </mat-form-field>
+
+
+            <mat-form-field>
+                <input matInput placeholder="Repita a Senha" id="repitasenha" type="password" formControlName="repitasenha" [(ngModel)]="signup.Password2" required>
+                <mat-hint align="end">Aceita no máximo 7 caracter.</mat-hint>
+                <mat-error *ngIf="hasError('repitasenha', 'required')">Senha é obrigatória</mat-error>
+                <mat-error *ngIf="hasError('repitasenha', 'maxlength')">Não é permitido mais de 7 caracteres.</mat-error>
+                <mat-error *ngIf="hasError('repitasenha', 'minlength')">Não é permitido menos de 4 caracteres.</mat-error>
+            </mat-form-field>
+
+
+
+
+            <!-- <mat-form-field class="full-width-input">
+          <input matInput [(ngModel)]="signup?.password1" type="password" placeholder="Password" f>
+          <mat-error>
+            Forneça uma senha válida
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field class="full-width-input">
+            <input  matInput [(ngModel)]="signup?.password2" type="password" placeholder="Confirm Password" >
+            <mat-error>
+              Forneça uma senha válida
+            </mat-error>
+          </mat-form-field> -->
+
+            <button mat-raised-button color="primary" [disabled]="!signupForm.valid"><mat-icon>save</mat-icon> Registrar</button>
+            <button mat-raised-button style="margin:5px;" color="basic" (click)="cancel()">Cancelar</button>
+
+        </form>
+
+    </mat-card-content>
+</mat-card>

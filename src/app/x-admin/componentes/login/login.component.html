@@ -1,0 +1,33 @@
+  
+  <br>
+  <br>
+  <mat-card>
+    <mat-card-content>
+        <form [formGroup]="signupForm"  autocomplete="off" novalidate (ngSubmit)="login(signupForm.value)">
+            <!-- <img style=" cursor: pointer; margin: 0 auto;" (click)="cancel()" width="150px" src="../../../../assets/logoPrincipal.svg"> -->
+            <h2 style="color: rgb(248, 248, 248);">Painel</h2>
+            <mat-error *ngIf="loginInvalid">
+                O nome de usuário e a senha não foram reconhecidos
+            </mat-error>
+            <mat-form-field>
+                <input matInput placeholder="Email" id="email" type="email" formControlName="email" [(ngModel)]="signup.Email" required>
+                <mat-hint align="end">Aceita no máximo 60 caracter.</mat-hint>
+                <mat-error *ngIf="hasError('email', 'required')">Email é obrigatório</mat-error>
+                <mat-error *ngIf="hasError('email', 'email')">Email inválido</mat-error>
+                <mat-error *ngIf="hasError('email', 'maxlength')">Não é permitido mais de 60 caracteres.</mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <input matInput placeholder="Senha" id="senha" type="password" formControlName="senha" [(ngModel)]="signup.Password1" required>
+                <mat-error *ngIf="hasError('senha', 'required')">Senha é obrigatória</mat-error>
+            </mat-form-field>
+
+            <button mat-raised-button color="primary" [disabled]="!signupForm.valid"><mat-icon>save</mat-icon> Entrar</button>
+            <!-- <button mat-raised-button style="margin:5px;" color="basic" (click)="registrar()">Registe-se</button> -->
+        </form>
+        <p class="register">
+            <small>ou</small><br>
+            <a mat-button routerLink="/admin/signup">Registre-se</a> </p>
+    </mat-card-content>
+
+</mat-card>

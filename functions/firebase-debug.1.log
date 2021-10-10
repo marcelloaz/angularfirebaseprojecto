@@ -1,0 +1,492 @@
+[debug] [2021-10-08T23:47:40.336Z] ----------------------------------------------------------------------
+[debug] [2021-10-08T23:47:40.340Z] Command:       C:\nodejs\node.exe C:\Users\ADM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-10-08T23:47:40.341Z] CLI Version:   9.19.0
+[debug] [2021-10-08T23:47:40.341Z] Platform:      win32
+[debug] [2021-10-08T23:47:40.342Z] Node Version:  v10.15.3
+[debug] [2021-10-08T23:47:40.344Z] Time:          Fri Oct 08 2021 20:47:40 GMT-0300 (GMT-03:00)
+[debug] [2021-10-08T23:47:40.344Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-08T23:47:40.497Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-08T23:47:40.498Z] > authorizing via signed-in user (marcelloaze@gmail.com)
+[debug] [2021-10-08T23:47:40.498Z] [iam] checking project vendafacil-2d9db for permissions ["firebase.projects.get"]
+[debug] [2021-10-08T23:47:40.502Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vendafacil-2d9db:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-10-08T23:47:41.522Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 08 Oct 2021 23:47:22 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=735","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  Your requested "node" version "14" doesn't match your global version "10" {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"14\" doesn't match your global version \"10\""}}
+[debug] [2021-10-08T23:47:42.589Z] defaultcredentials: writing to file C:\Users\ADM\AppData\Roaming\firebase\marcelloaze_gmail_com_application_default_credentials.json
+[debug] [2021-10-08T23:47:42.591Z] DEBUG: Setting GAC to C:\Users\ADM\AppData\Roaming\firebase\marcelloaze_gmail_com_application_default_credentials.json
+[debug] [2021-10-08T23:47:42.594Z] > refreshing access token with scopes: []
+[debug] [2021-10-08T23:47:42.594Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-08T23:47:42.808Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 08 Oct 2021 23:47:23 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-08T23:47:42.810Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig [none]
+[debug] [2021-10-08T23:47:43.266Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig 200
+[debug] [2021-10-08T23:47:43.266Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db/adminSdkConfig {"projectId":"vendafacil-2d9db","databaseURL":"https://vendafacil-2d9db.firebaseio.com","storageBucket":"vendafacil-2d9db.appspot.com","locationId":"southamerica-east1"}
+[debug] [2021-10-08T23:47:43.283Z] [functions] Watching "C:\projeto\vendaFacil\functions" for Cloud Functions...
+[debug] [2021-10-08T23:47:43.307Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-08T23:47:43.307Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-10-08T23:47:43.307Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-08T23:47:43.308Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\13504
+[debug] [2021-10-08T23:47:43.308Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: BUSY
+[debug] [2021-10-08T23:47:43.936Z] DEBUG: [runtime-status] [13504] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-08T23:47:43.938Z] DEBUG: [runtime-status] [13504] Disabled runtime features: undefined
+[debug] [2021-10-08T23:47:43.950Z] DEBUG: [runtime-status] [13504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-08T23:47:43.955Z] DEBUG: [runtime-status] [13504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-08T23:47:43.960Z] DEBUG: [runtime-status] [13504] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-08T23:47:43.960Z] DEBUG: [runtime-status] [13504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] Checked functions.config() {"config":{}}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-08T23:47:44.116Z] DEBUG: [runtime-status] [13504] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-08T23:47:44.132Z] DEBUG: [runtime-status] [13504] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-addUsuariosPush]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-addCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-updateProduto]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-updateCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-deleteCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-changeCategoria]] function ignored because the database emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-cardAdded]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-cardUpdated]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-cardDeleted]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-cardChanged]] function ignored because the firestore emulator does not exist or is not running.
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-addUsuario]] http function initialized (http://localhost:5001/vendafacil-2d9db/us-central1/addUsuario).
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-MsgUsuario]] http function initialized (http://localhost:5001/vendafacil-2d9db/us-central1/MsgUsuario).
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-Notificar]] http function initialized (http://localhost:5001/vendafacil-2d9db/us-central1/Notificar).
+[debug] [2021-10-08T23:47:44.163Z] [functions[us-central1-addCard]] http function initialized (http://localhost:5001/vendafacil-2d9db/us-central1/addCard).
+[info] i  functions: Loaded functions: addUsuariosPush, addCategoria, updateProduto, updateCategoria, deleteCategoria, changeCategoria, cardAdded, cardUpdated, cardDeleted, cardChanged, addUsuario, MsgUsuario, Notificar, addCard 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2021-10-08T23:47:44.189Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: IDLE
+[debug] [2021-10-09T00:01:13.778Z] ----------------------------------------------------------------------
+[debug] [2021-10-09T00:01:13.783Z] Command:       C:\nodejs\node.exe C:\Users\ADM\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2021-10-09T00:01:13.784Z] CLI Version:   9.19.0
+[debug] [2021-10-09T00:01:13.784Z] Platform:      win32
+[debug] [2021-10-09T00:01:13.784Z] Node Version:  v10.15.3
+[debug] [2021-10-09T00:01:13.794Z] Time:          Fri Oct 08 2021 21:01:13 GMT-0300 (GMT-03:00)
+[debug] [2021-10-09T00:01:13.794Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-09T00:01:13.952Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-09T00:01:13.952Z] > authorizing via signed-in user (marcelloaze@gmail.com)
+[debug] [2021-10-09T00:01:13.952Z] [iam] checking project vendafacil-2d9db for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-09T00:01:13.957Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-09T00:01:13.958Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T00:01:14.285Z] <<< HTTP RESPONSE 200 {"date":"Sat, 09 Oct 2021 00:00:54 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:14.306Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/vendafacil-2d9db:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-09T00:01:15.254Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 00:00:55 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=728","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:15.258Z] > refreshing access token with scopes: []
+[debug] [2021-10-09T00:01:15.258Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T00:01:15.498Z] <<< HTTP RESPONSE 200 {"date":"Sat, 09 Oct 2021 00:00:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:15.513Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db [none]
+[debug] [2021-10-09T00:01:16.564Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db 200
+[debug] [2021-10-09T00:01:16.564Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vendafacil-2d9db {"projectId":"vendafacil-2d9db","projectNumber":"866052965084","displayName":"vendafacil","name":"projects/vendafacil-2d9db","resources":{"hostingSite":"vendafacil-2d9db","realtimeDatabaseInstance":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'vendafacil-2d9db'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-09T00:01:16.577Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-09T00:01:16.578Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T00:01:16.825Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 09 Oct 2021 00:00:57 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:16.840Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-09T00:01:18.422Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 00:00:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[vendafacil-2d9db]: beginning deploy... 
+[info] i  hosting[vendafacil-2d9db]: found 72 files in dist/VendaFacil 
+[debug] [2021-10-09T00:01:18.720Z] > refreshing access token with scopes: []
+[debug] [2021-10-09T00:01:18.720Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T00:01:18.728Z] [hosting] hash cache [ZGlzdFxWZW5kYUZhY2ls] stored for 72 files
+[debug] [2021-10-09T00:01:18.729Z] [hosting][hash queue][FINAL] {"max":228,"min":0,"avg":16.868009690047167,"active":0,"complete":72,"success":72,"errored":0,"retried":0,"total":72,"elapsed":247}
+[debug] [2021-10-09T00:01:18.968Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 09 Oct 2021 00:00:59 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:18.981Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289:populateFiles [none]
+[debug] [2021-10-09T00:01:18.981Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289:populateFiles {"files":{"/favicon.ico":"2c19690e9587bae12f419b34d2edeecc76808099540a9c9f4ea6194116cfc8f7","/firebase-messaging-sw.js":"c161c5a279262c163ae41fcfa2c05a24f52c0d9f0409ee337716c264dd1f0ae9","/assets/abertura_sidenav.svg":"2187d4fc88793fec7f6cae9cf1f1089dbb98f8875099320972d7f50ff88b8ac9","/assets/almondegasemrecheio.jpg":"4a084228b67124022f732a3feb01fe41688331b88ee70f32b4bc4e8402b131fc","/assets/backgrond.svg":"57a2116e1b7f7d44e2cb8c1f2944d82265db7869ce6f4926a3093f8355237fee","/assets/bacon.jpg":"691be94a7733e9eeb04f32a7d9f1bb3019f9ac5ec739f9c79d334d304cb38447","/assets/banner.ai":"2dc9cabb6530c2ad3d5daa9cf9722d73f1e317bf06d43d45dd652c9f74e45534","/assets/banner.svg":"d31e7309b0f0cb659a5766588941a9c97d7dda1234247e60d13ad4a7ad338d0a","/assets/banner1.svg":"0f524604f01d27d19d1a2c9719ddaeb5c218945621c07303ba2b4561f898a661","/assets/blackPig.svg":"d79c73504133ba26f3af0d57010e53b06e0f3dc389c048ee5eac76fc773e9a7c","/assets/blakstypecartton.ai":"fe29b8bff9613804326fd8eb8e1e59d8f7ea7b0abf5c725a3b4b55a1fb4be1ed","/assets/continuar.ai":"840d1aa476bfda6f42a682975851a9db3a1e705a88d98afa999ff2b56b4c88a8","/assets/coroa.ai":"c90e6bfdd4d5d394e2c6743d30aa7d154d5d5442ebb9af58cc0d9f37d76a4bca","/assets/costelinha.jpg":"e5cdbac3839ece1c49f41cd8fd6be8ba7a3c8a46b3d2aa9d23bc99a645f1a346","/assets/desenhonobar.ai":"7935e7daf746b8a9820ba0270b0740d9d01207999105d49c2eb0f4267aaa8d96","/assets/efeit_estrelas.svg":"6fc3f7555601e8811015de99b4f3242c024a80c86ceb76f811d129028dc3556e","/assets/fazePedido.svg":"0e0ce340c7b9b13407965c698cd20d3285613e539e84798c2c0d354400caeded","/assets/haburger.jpg":"38b5afd4d0698bb7df8621bd6367e2e1ea9e0098b70f2138cf700c292da7d41d","/assets/hambuger.jpg":"ce337547e935db780d66a75a45e737d875127949ea907fbd6790c5bc7811be14","/assets/hamburgekit2.jpg":"fe48b1522a7b3191332acb51eceeea0fbae26ac187b8042a688222804a9f9ca5","/assets/icone-btn-bacon.svg":"8b707dd47e87f3a47743970325331782dc941842e85116bcdc0802b1956ce251","/assets/icones.ai":"89b860556a2abe4d0c6fe733f354e13f6821f9c0564be7294f94ac84207a5d6d","/assets/iconessenhorbacon.ai":"09027c95d02902e7b590bc0f45cd49e84334feb97dafd570b46d2f8cb8c85c78","/assets/icon_all.ai":"a2e8654a594bd6bb455099efadab2073fca5057b3a4ad5da6ad34b9607be180d","/assets/icon_almond.svg":"d0d559f9c457146bcd817975408ed76504f1729b06fd4cf78ea87254814a6f1e","/assets/icon_bacon.ai":"f51e7738cd8c80ea2533546f743aa221cad7c14955c54cbacd84be5f568bbe46","/assets/icon_bacon.svg":"b7031c025adae46353dec9bff585d4f0e38db4010e85ac0c1ae9b0fa131efabb","/assets/icon_burger.svg":"133de9db112f01774197e6a0c556c01879c92df173d546e1fcd13cb50e8da04e","/assets/icon_costela.svg":"8f247e0cf956bd7de0d51aada9706065e285d6ef514e3dc2c9a9deeef9d3ecbc","/assets/icon_farofade.svg":"70ec9aab98fff83492b35e6f5de6478758097cf3bc4347172f6e676d1fce8e5b","/assets/icon_linguica.svg":"97880c1183dd8cbd615c9dab17dc39be96c5cb11b74e04279b7687eed85ab435","/assets/jacare.ai":"590cf5a8ab2caefa241518df48b88a28887696bf17f43c22bab4ff86a27e8ae3","/assets/jacaremaneiro.ai":"b4fd02307ea548cad5076fc1817c259325999521071182137fbd88b167c3c2fe","/assets/linguica.jpg":"285b5546eec26387c664f81a135fa5303d41e8efad44e9df9d40b677a59b99bd","/assets/linguicabook.jpg":"ab95864dfc78d0b5e4abb4f92a3379580a0f7ccfd4cdf99a8f24fd8f792c3645","/assets/logo nova 16.0.ai":"207058b84c959e45b603be4cb5020f88ea67c252d2b2506df641a98c82edc21d","/assets/logo nova 16.0.cdr":"6c95b0a74188f18eca8628aab6c25f3260497b44f03b2aaaad9a7ce4f562dc6d","/assets/logo-home.svg":"012510eda4d1170469951efec48bcbb33fa45a517a0777969945f7210dcb590c","/assets/logo.svg":"d2a62e7538713dbb053d1b4347998fe17e6c6c732821aefe09731eac9fd5f4b6","/assets/logoNome.ai":"be739a743a08240c10e80b97d88e14816fcade7639181ba4c41f54df4c60b429","/assets/logoNome.svg":"daf0d39f109ac1568d5e89ca0c4a3b5d6135e0c9a412a5879c5e59c6a37201b3","/assets/logoNomeBranca.svg":"09b9a1dd9a931ceaa5d4739bb4956a80222e7a360be314eb968ecdb6853bc023","/assets/logoNomeLoja (1).svg":"bfa3f1d2a5b4c2397119302048ffb4fb12b29880e745ec4ec0833d4cf6e7a0fb","/assets/logoNomeLoja.jpg":"aeae1814ab3e547db5d1849a3735218ad816c644617722078ac276b49b9f3e2c","/assets/logoNomeLoja.svg":"bfa3f1d2a5b4c2397119302048ffb4fb12b29880e745ec4ec0833d4cf6e7a0fb","/assets/logoPrincipal.svg":"c84f9522cec412e4ceced7a437d7edb43c6fd04ce21649da5496e81997895fcb","/assets/logoSenhorBaconPadrao.svg":"ff0d64f9de13033d40e8c8009e10ae92614fb466a49ec6300aa7a5f87a798b58","/assets/logo_button.svg":"012510eda4d1170469951efec48bcbb33fa45a517a0777969945f7210dcb590c","/assets/logo_empty.svg":"64167c08b748a190add6d3e36c43acd7d614542e90a5bcf26f7ac08327fbb163","/assets/manifest.json":"83bd3fff0463d09f7d3decf883f5604eedf7c1910da2c379f94031319c22a389","/assets/menu_background.svg":"0f642a53480adfe282b6edbee3928e5f5d3d05b6d49c323fd5011ce8560ec26a","/assets/mountains.jpg":"802904e552619cc03e33634d4b24edd7fc20fd7a4a5c9e8def5421b795386aa5","/assets/origina_space.mp4":"5242b364e5fc875e56110cf4c193ac134344baa2dddb569c9c155201abcb82c1","/assets/painelgsapgamesample [Recuperado].ai":"4dcfd10f273260390a85f88c370a4d8ef2e2b2fcfa6bc40a5aa08ac2a67f3ca6","/assets/painelgsapgamesample.ai":"8ffef7b15eed0a152fde82e1d62bfa5fde8cd2de8d9466181b9651c69ecbc081","/assets/pig_black.ai":"9b30a018d3c728eb8a6bcb5274d29c0967b687c39b620fb724b9cae57719acbf","/assets/PNG/icon_burger.png":"43eab5d610723014cae5240566f2eba7a5e40d0afda06b413629440c41d7eccc","/1.db08402f9949dce89cbc.js":"bb38303bc1f8a89cf877cc525c524c756edb6ccb6abdf344026132063ed5f395","/3rdpartylicenses.txt":"dbc48d0c315a2ad0c9cef337cf07e69d3df688f76f0bd00bfdbd777c8275afd7","/6.9c56423065e813994734.js":"21110cc3cd851552f8900b83e51b12ec2b301f93362242dec427ebf9263f32e4","/7.64d028922dfa5156e3b1.js":"1bc1dee62271e1ab1b672a4bf161b9faa77bb0eb4ef5f5990c0b82785950d0b9","/9.cb52eb53c99f6c85389a.js":"25b389905bbde15cb1ab9ee77a08ba41e9b6d637d4eb100bc79caf2f4254b2ec","/backgrond.2e5af035fc7f58f5c195.svg":"57a2116e1b7f7d44e2cb8c1f2944d82265db7869ce6f4926a3093f8355237fee","/banner1.8bfcc38746dd654ae20f.svg":"0f524604f01d27d19d1a2c9719ddaeb5c218945621c07303ba2b4561f898a661","/index.html":"bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba","/menu_background.f4d632a8a29474fe5437.svg":"0f642a53480adfe282b6edbee3928e5f5d3d05b6d49c323fd5011ce8560ec26a","/runtime.e7679eb67e806caea60a.js":"c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d","/polyfills.1424a1b243c629c85996.js":"7b091a8edf6b43bec5c98aaa18f6042de22580e8e4082924cb1aebe943e42d10","/styles.6ced9fefc6f0d9b9b9f4.css":"9e813db555e5f2a4f3de420ae5ca4973df87b13b21a2f65bb3773a5af704847e","/8.53d19859972eacedfc6c.js":"30581f9b3f01cefe64c69aba9b61e59414f3db43659330c61efbdc49f92e7b81","/2.fc6fa94e9fb9fceb170c.js":"6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456","/main.e3a33491f8b4b9938920.js":"61f029aa6a492b724686a19aa8a1a37b1b9273f14bed4f037876d295d68d8293"}}
+[debug] [2021-10-09T00:01:20.275Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289:populateFiles 200
+[debug] [2021-10-09T00:01:20.275Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289:populateFiles {"uploadRequiredHashes":["6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456","c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d","bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files"}
+[debug] [2021-10-09T00:01:20.278Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456 [none]
+[debug] [2021-10-09T00:01:20.278Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456 [stream]
+[debug] [2021-10-09T00:01:20.281Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d [none]
+[debug] [2021-10-09T00:01:20.281Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d [stream]
+[debug] [2021-10-09T00:01:20.283Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba [none]
+[debug] [2021-10-09T00:01:20.283Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba [stream]
+[debug] [2021-10-09T00:01:20.286Z] [hosting][populate queue][FINAL] {"max":1559,"min":1559,"avg":1559,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1567}
+[debug] [2021-10-09T00:01:20.286Z] [hosting] uploads queued: 3
+[debug] [2021-10-09T00:01:22.310Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba 200
+[debug] [2021-10-09T00:01:22.310Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/bfc9742a8f68e986e1a230fb24ddc3ba905601338aeb757b5794e4d5464423ba [stream]
+[debug] [2021-10-09T00:01:22.478Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d 200
+[debug] [2021-10-09T00:01:22.478Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/c5fa1e8ea6425be7ad83367080c42dca6f5e6d3cc989770a9e0cb0879626311d [stream]
+[debug] [2021-10-09T00:01:23.032Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456 200
+[debug] [2021-10-09T00:01:23.032Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289/files/6ebb28d63b695a669db686e9fd68aa489568154791b118b20d4cbd2dce509456 [stream]
+[debug] [2021-10-09T00:01:23.032Z] [hosting][upload queue][FINAL] {"max":2756,"min":2033,"avg":2330,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":2756}
+[info] +  hosting[vendafacil-2d9db]: file upload complete 
+[debug] [2021-10-09T00:01:23.035Z] [hosting] deploy completed after 4610ms
+[debug] [2021-10-09T00:01:23.037Z] [
+  {
+    "config": {
+      "public": "dist/VendaFacil",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "ignore": [
+        "firebase.json",
+        "**/node_modules/**"
+      ],
+      "site": "vendafacil-2d9db"
+    },
+    "site": "vendafacil-2d9db",
+    "version": "sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289"
+  }
+]
+[info] i  hosting[vendafacil-2d9db]: finalizing version... 
+[debug] [2021-10-09T00:01:23.040Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-09T00:01:23.040Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-09T00:01:23.279Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sat, 09 Oct 2021 00:01:03 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:23.293Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-10-09T00:01:24.530Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 00:01:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:01:24.531Z] [hosting] finalized version for vendafacil-2d9db: {"name":"sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-10-09T00:00:58.508474Z","createUser":{"email":"marcelloaze@gmail.com"},"finalizeTime":"2021-10-09T00:01:05.027043Z","finalizeUser":{"email":"marcelloaze@gmail.com"}}
+[info] +  hosting[vendafacil-2d9db]: version finalized 
+[info] i  hosting[vendafacil-2d9db]: releasing new version... 
+[debug] [2021-10-09T00:01:24.535Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/vendafacil-2d9db/releases?version_name=sites/vendafacil-2d9db/versions/fbd1d9d2b1fb9289  
+ {"message":null}
+[debug] [2021-10-09T00:01:25.694Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 09 Oct 2021 00:01:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-09T00:08:16.522Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:16.610Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:17.618Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:08:17.618Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: FINISHING
+[debug] [2021-10-09T00:08:17.719Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:08:17.720Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:08:17.720Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:08:17.724Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\12020
+[debug] [2021-10-09T00:08:17.725Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: BUSY
+[debug] [2021-10-09T00:08:17.750Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: exited
+[debug] [2021-10-09T00:08:17.751Z] DEBUG: [worker-~diagnostic~-4967db1d-0d5e-4e25-a250-62b25ca7a1cc]: FINISHED
+[debug] [2021-10-09T00:08:18.633Z] DEBUG: [runtime-status] [12020] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:08:18.637Z] DEBUG: [runtime-status] [12020] Disabled runtime features: undefined
+[debug] [2021-10-09T00:08:18.652Z] DEBUG: [runtime-status] [12020] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.657Z] DEBUG: [runtime-status] [12020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.664Z] DEBUG: [runtime-status] [12020] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:08:18.665Z] DEBUG: [runtime-status] [12020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.934Z] DEBUG: [runtime-status] [12020] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:08:18.936Z] DEBUG: [runtime-status] [12020] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:18.936Z] DEBUG: [runtime-status] [12020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.937Z] DEBUG: [runtime-status] [12020] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.938Z] DEBUG: [runtime-status] [12020] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:18.939Z] DEBUG: [runtime-status] [12020] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:18.946Z] DEBUG: [runtime-status] [12020] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:08:19.009Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: IDLE
+[debug] [2021-10-09T00:08:21.915Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:22.045Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:22.268Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:23.273Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:08:23.273Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: FINISHING
+[debug] [2021-10-09T00:08:23.274Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:08:23.292Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:08:23.292Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:08:23.292Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:08:23.293Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\10080
+[debug] [2021-10-09T00:08:23.294Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: BUSY
+[debug] [2021-10-09T00:08:23.364Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: exited
+[debug] [2021-10-09T00:08:23.364Z] DEBUG: [worker-~diagnostic~-fcbb9b56-caa2-4bb9-ac0f-8cadb5f4804d]: FINISHED
+[debug] [2021-10-09T00:08:24.325Z] DEBUG: [runtime-status] [10080] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:08:24.332Z] DEBUG: [runtime-status] [10080] Disabled runtime features: undefined
+[debug] [2021-10-09T00:08:24.347Z] DEBUG: [runtime-status] [10080] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.363Z] DEBUG: [runtime-status] [10080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.371Z] DEBUG: [runtime-status] [10080] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:08:24.372Z] DEBUG: [runtime-status] [10080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.603Z] DEBUG: [runtime-status] [10080] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:08:24.604Z] DEBUG: [runtime-status] [10080] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:24.605Z] DEBUG: [runtime-status] [10080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.608Z] DEBUG: [runtime-status] [10080] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.609Z] DEBUG: [runtime-status] [10080] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:24.610Z] DEBUG: [runtime-status] [10080] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:24.622Z] DEBUG: [runtime-status] [10080] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:08:24.658Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: IDLE
+[debug] [2021-10-09T00:08:25.307Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:25.505Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:25.691Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:08:26.700Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:08:26.701Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: FINISHING
+[debug] [2021-10-09T00:08:26.701Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:08:26.758Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:08:26.759Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:08:26.759Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:08:26.759Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\2884
+[debug] [2021-10-09T00:08:26.759Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: BUSY
+[debug] [2021-10-09T00:08:26.760Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: exited
+[debug] [2021-10-09T00:08:26.760Z] DEBUG: [worker-~diagnostic~-e7ee0aad-08a1-407d-9d15-095414b023d1]: FINISHED
+[debug] [2021-10-09T00:08:27.729Z] DEBUG: [runtime-status] [2884] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:08:27.734Z] DEBUG: [runtime-status] [2884] Disabled runtime features: undefined
+[debug] [2021-10-09T00:08:27.764Z] DEBUG: [runtime-status] [2884] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.768Z] DEBUG: [runtime-status] [2884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.776Z] DEBUG: [runtime-status] [2884] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:08:27.778Z] DEBUG: [runtime-status] [2884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.980Z] DEBUG: [runtime-status] [2884] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:08:27.981Z] DEBUG: [runtime-status] [2884] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:27.984Z] DEBUG: [runtime-status] [2884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.988Z] DEBUG: [runtime-status] [2884] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.989Z] DEBUG: [runtime-status] [2884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:08:27.991Z] DEBUG: [runtime-status] [2884] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:08:28.000Z] DEBUG: [runtime-status] [2884] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:08:28.051Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: IDLE
+[debug] [2021-10-09T00:15:27.540Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:15:28.115Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:15:29.137Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:15:29.137Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: FINISHING
+[debug] [2021-10-09T00:15:29.138Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:15:29.296Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:15:29.296Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:15:29.296Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:15:29.297Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\9204
+[debug] [2021-10-09T00:15:29.297Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: BUSY
+[debug] [2021-10-09T00:15:29.298Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: exited
+[debug] [2021-10-09T00:15:29.298Z] DEBUG: [worker-~diagnostic~-193be456-0d8d-4c9e-825b-097371847c25]: FINISHED
+[debug] [2021-10-09T00:15:30.535Z] DEBUG: [runtime-status] [9204] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:15:30.541Z] DEBUG: [runtime-status] [9204] Disabled runtime features: undefined
+[debug] [2021-10-09T00:15:30.549Z] DEBUG: [runtime-status] [9204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.560Z] DEBUG: [runtime-status] [9204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.571Z] DEBUG: [runtime-status] [9204] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:15:30.574Z] DEBUG: [runtime-status] [9204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.818Z] DEBUG: [runtime-status] [9204] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:15:30.820Z] DEBUG: [runtime-status] [9204] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:15:30.821Z] DEBUG: [runtime-status] [9204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.824Z] DEBUG: [runtime-status] [9204] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.825Z] DEBUG: [runtime-status] [9204] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:15:30.825Z] DEBUG: [runtime-status] [9204] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:15:30.862Z] DEBUG: [runtime-status] [9204] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:15:30.892Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: IDLE
+[debug] [2021-10-09T00:16:11.011Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:16:11.265Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:16:12.266Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:16:12.266Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: FINISHING
+[debug] [2021-10-09T00:16:12.266Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:16:12.285Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:16:12.285Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:16:12.285Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:16:12.286Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\2356
+[debug] [2021-10-09T00:16:12.286Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: BUSY
+[debug] [2021-10-09T00:16:12.287Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: exited
+[debug] [2021-10-09T00:16:12.287Z] DEBUG: [worker-~diagnostic~-ee8ebe20-c153-45d5-ba31-cd644c2fea7c]: FINISHED
+[debug] [2021-10-09T00:16:13.165Z] DEBUG: [runtime-status] [2356] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:16:13.168Z] DEBUG: [runtime-status] [2356] Disabled runtime features: undefined
+[debug] [2021-10-09T00:16:13.199Z] DEBUG: [runtime-status] [2356] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.205Z] DEBUG: [runtime-status] [2356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.214Z] DEBUG: [runtime-status] [2356] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:16:13.229Z] DEBUG: [runtime-status] [2356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.457Z] DEBUG: [runtime-status] [2356] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:16:13.458Z] DEBUG: [runtime-status] [2356] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:13.461Z] DEBUG: [runtime-status] [2356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.465Z] DEBUG: [runtime-status] [2356] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.468Z] DEBUG: [runtime-status] [2356] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:13.471Z] DEBUG: [runtime-status] [2356] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:13.481Z] DEBUG: [runtime-status] [2356] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:16:13.542Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: IDLE
+[debug] [2021-10-09T00:16:19.939Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:16:20.940Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:16:20.940Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: FINISHING
+[debug] [2021-10-09T00:16:20.940Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:16:20.977Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:16:20.978Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:16:20.978Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:16:20.978Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\11404
+[debug] [2021-10-09T00:16:20.979Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: BUSY
+[debug] [2021-10-09T00:16:20.980Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: exited
+[debug] [2021-10-09T00:16:20.980Z] DEBUG: [worker-~diagnostic~-02684113-d3ff-4c17-b582-cfbd3cd607f7]: FINISHED
+[debug] [2021-10-09T00:16:22.152Z] DEBUG: [runtime-status] [11404] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:16:22.157Z] DEBUG: [runtime-status] [11404] Disabled runtime features: undefined
+[debug] [2021-10-09T00:16:22.256Z] DEBUG: [runtime-status] [11404] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.260Z] DEBUG: [runtime-status] [11404] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.270Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:16:22.332Z] DEBUG: [runtime-status] [11404] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:16:22.333Z] DEBUG: [runtime-status] [11404] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.826Z] DEBUG: [runtime-status] [11404] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:16:22.828Z] DEBUG: [runtime-status] [11404] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:22.828Z] DEBUG: [runtime-status] [11404] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.832Z] DEBUG: [runtime-status] [11404] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.838Z] DEBUG: [runtime-status] [11404] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:22.838Z] DEBUG: [runtime-status] [11404] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:23.272Z] DEBUG: [worker-pool] Marking BUSY worker to finish (~diagnostic~)
+[debug] [2021-10-09T00:16:23.272Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: FINISHING
+[debug] [2021-10-09T00:16:23.272Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:16:23.283Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:16:23.284Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:16:23.284Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:16:23.284Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\8168
+[debug] [2021-10-09T00:16:23.284Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: BUSY
+[debug] [2021-10-09T00:16:25.024Z] DEBUG: [runtime-status] [8168] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:16:25.030Z] DEBUG: [runtime-status] [8168] Disabled runtime features: undefined
+[debug] [2021-10-09T00:16:25.041Z] DEBUG: [runtime-status] [8168] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.046Z] DEBUG: [runtime-status] [8168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.083Z] DEBUG: [runtime-status] [8168] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:16:25.084Z] DEBUG: [runtime-status] [8168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.318Z] DEBUG: [runtime-status] [8168] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:16:25.320Z] DEBUG: [runtime-status] [8168] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:25.321Z] DEBUG: [runtime-status] [8168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.324Z] DEBUG: [runtime-status] [8168] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.325Z] DEBUG: [runtime-status] [8168] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:25.326Z] DEBUG: [runtime-status] [8168] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:25.817Z] DEBUG: [runtime-status] [8168] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:16:25.822Z] DEBUG: [runtime-status] [11404] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:16:25.855Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: IDLE
+[debug] [2021-10-09T00:16:25.880Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: IDLE --> FINISHING
+[debug] [2021-10-09T00:16:25.930Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:16:25.933Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: exited
+[debug] [2021-10-09T00:16:25.934Z] DEBUG: [worker-~diagnostic~-3de1c933-f937-4dfc-8449-8aec2a98b3ab]: FINISHED
+[debug] [2021-10-09T00:16:26.934Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:16:26.934Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: FINISHING
+[debug] [2021-10-09T00:16:26.934Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:16:26.958Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:16:26.958Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:16:26.958Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:16:26.959Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\14752
+[debug] [2021-10-09T00:16:26.959Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: BUSY
+[debug] [2021-10-09T00:16:26.960Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: exited
+[debug] [2021-10-09T00:16:26.960Z] DEBUG: [worker-~diagnostic~-2d6274e3-7d63-46f7-87a5-bbfec36287fd]: FINISHED
+[debug] [2021-10-09T00:16:27.680Z] DEBUG: [runtime-status] [14752] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:16:27.690Z] DEBUG: [runtime-status] [14752] Disabled runtime features: undefined
+[debug] [2021-10-09T00:16:27.697Z] DEBUG: [runtime-status] [14752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.701Z] DEBUG: [runtime-status] [14752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.708Z] DEBUG: [runtime-status] [14752] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:16:27.710Z] DEBUG: [runtime-status] [14752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.853Z] DEBUG: [runtime-status] [14752] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:16:27.854Z] DEBUG: [runtime-status] [14752] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:27.856Z] DEBUG: [runtime-status] [14752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.859Z] DEBUG: [runtime-status] [14752] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.859Z] DEBUG: [runtime-status] [14752] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:16:27.861Z] DEBUG: [runtime-status] [14752] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:16:27.865Z] DEBUG: [runtime-status] [14752] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:16:27.893Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: IDLE
+[debug] [2021-10-09T00:38:27.203Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:38:27.424Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T00:38:28.429Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T00:38:28.430Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: FINISHING
+[debug] [2021-10-09T00:38:28.434Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T00:38:28.479Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T00:38:28.479Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T00:38:28.479Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T00:38:28.480Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\3376
+[debug] [2021-10-09T00:38:28.480Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: BUSY
+[debug] [2021-10-09T00:38:28.527Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: exited
+[debug] [2021-10-09T00:38:28.527Z] DEBUG: [worker-~diagnostic~-ffe060ff-20f6-4c4f-b443-aa1c2149afdc]: FINISHED
+[debug] [2021-10-09T00:38:29.532Z] DEBUG: [runtime-status] [3376] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T00:38:29.546Z] DEBUG: [runtime-status] [3376] Disabled runtime features: undefined
+[debug] [2021-10-09T00:38:29.582Z] DEBUG: [runtime-status] [3376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.585Z] DEBUG: [runtime-status] [3376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.589Z] DEBUG: [runtime-status] [3376] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T00:38:29.591Z] DEBUG: [runtime-status] [3376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.863Z] DEBUG: [runtime-status] [3376] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T00:38:29.864Z] DEBUG: [runtime-status] [3376] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T00:38:29.865Z] DEBUG: [runtime-status] [3376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.869Z] DEBUG: [runtime-status] [3376] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.870Z] DEBUG: [runtime-status] [3376] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T00:38:29.872Z] DEBUG: [runtime-status] [3376] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T00:38:29.877Z] DEBUG: [runtime-status] [3376] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T00:38:29.935Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: IDLE
+[debug] [2021-10-09T01:37:28.965Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T01:37:29.999Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T01:37:30.000Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: FINISHING
+[debug] [2021-10-09T01:37:30.001Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T01:37:30.028Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T01:37:30.028Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T01:37:30.028Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T01:37:30.030Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\15240
+[debug] [2021-10-09T01:37:30.030Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: BUSY
+[debug] [2021-10-09T01:37:30.049Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: exited
+[debug] [2021-10-09T01:37:30.049Z] DEBUG: [worker-~diagnostic~-4f9139e5-9b5c-461d-94d9-e47df4581dd6]: FINISHED
+[debug] [2021-10-09T01:37:30.970Z] DEBUG: [runtime-status] [15240] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T01:37:30.974Z] DEBUG: [runtime-status] [15240] Disabled runtime features: undefined
+[debug] [2021-10-09T01:37:30.984Z] DEBUG: [runtime-status] [15240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:37:30.991Z] DEBUG: [runtime-status] [15240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:37:31.004Z] DEBUG: [runtime-status] [15240] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T01:37:31.006Z] DEBUG: [runtime-status] [15240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:37:32.086Z] DEBUG: [runtime-status] [15240] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T01:37:32.087Z] DEBUG: [runtime-status] [15240] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T01:37:32.087Z] DEBUG: [runtime-status] [15240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:37:32.087Z] DEBUG: [runtime-status] [15240] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:37:32.088Z] DEBUG: [runtime-status] [15240] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:37:32.091Z] DEBUG: [runtime-status] [15240] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T01:37:32.091Z] DEBUG: [runtime-status] [15240] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T01:37:32.093Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: IDLE
+[debug] [2021-10-09T01:38:08.984Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T01:38:09.986Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T01:38:09.986Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: FINISHING
+[debug] [2021-10-09T01:38:09.987Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T01:38:10.004Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T01:38:10.004Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T01:38:10.005Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T01:38:10.005Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\12760
+[debug] [2021-10-09T01:38:10.005Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: BUSY
+[debug] [2021-10-09T01:38:10.037Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: exited
+[debug] [2021-10-09T01:38:10.038Z] DEBUG: [worker-~diagnostic~-3305c125-3929-4142-98bb-0c001f084020]: FINISHED
+[debug] [2021-10-09T01:38:10.832Z] DEBUG: [runtime-status] [12760] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T01:38:10.837Z] DEBUG: [runtime-status] [12760] Disabled runtime features: undefined
+[debug] [2021-10-09T01:38:10.868Z] DEBUG: [runtime-status] [12760] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:38:10.873Z] DEBUG: [runtime-status] [12760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:10.881Z] DEBUG: [runtime-status] [12760] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T01:38:10.882Z] DEBUG: [runtime-status] [12760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:11.073Z] DEBUG: [runtime-status] [12760] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T01:38:11.074Z] DEBUG: [runtime-status] [12760] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T01:38:11.075Z] DEBUG: [runtime-status] [12760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:11.079Z] DEBUG: [runtime-status] [12760] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:38:11.080Z] DEBUG: [runtime-status] [12760] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:11.081Z] DEBUG: [runtime-status] [12760] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T01:38:11.102Z] DEBUG: [runtime-status] [12760] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T01:38:11.126Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: IDLE
+[debug] [2021-10-09T01:38:16.468Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T01:38:17.468Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T01:38:17.468Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: FINISHING
+[debug] [2021-10-09T01:38:17.469Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T01:38:17.494Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T01:38:17.494Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T01:38:17.495Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T01:38:17.495Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\1348
+[debug] [2021-10-09T01:38:17.495Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: BUSY
+[debug] [2021-10-09T01:38:17.496Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: exited
+[debug] [2021-10-09T01:38:17.496Z] DEBUG: [worker-~diagnostic~-23f93926-e5f4-4538-9788-dd5010e5be13]: FINISHED
+[debug] [2021-10-09T01:38:18.281Z] DEBUG: [runtime-status] [1348] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T01:38:18.285Z] DEBUG: [runtime-status] [1348] Disabled runtime features: undefined
+[debug] [2021-10-09T01:38:18.310Z] DEBUG: [runtime-status] [1348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.314Z] DEBUG: [runtime-status] [1348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.321Z] DEBUG: [runtime-status] [1348] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T01:38:18.323Z] DEBUG: [runtime-status] [1348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.522Z] DEBUG: [runtime-status] [1348] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T01:38:18.524Z] DEBUG: [runtime-status] [1348] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T01:38:18.526Z] DEBUG: [runtime-status] [1348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.529Z] DEBUG: [runtime-status] [1348] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.532Z] DEBUG: [runtime-status] [1348] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:38:18.533Z] DEBUG: [runtime-status] [1348] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T01:38:18.540Z] DEBUG: [runtime-status] [1348] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T01:38:18.575Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: IDLE
+[debug] [2021-10-09T01:43:34.198Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T01:43:34.254Z] DEBUG: File C:\projeto\vendaFacil\functions\index.js changed, reloading triggers
+[debug] [2021-10-09T01:43:35.270Z] DEBUG: [worker-pool] Shutting down IDLE worker (~diagnostic~)
+[debug] [2021-10-09T01:43:35.270Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: FINISHING
+[debug] [2021-10-09T01:43:35.270Z] DEBUG: [worker-pool] Cleaned up workers for ~diagnostic~: 2 --> 1
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=2
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-~diagnostic~-c1bb597f-6101-4a65-9fa6-2515d8671516]: Assigning socketPath: \\?\pipe\C:\projeto\vendaFacil\functions\13788
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-~diagnostic~-c1bb597f-6101-4a65-9fa6-2515d8671516]: BUSY
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: exited
+[debug] [2021-10-09T01:43:35.301Z] DEBUG: [worker-~diagnostic~-eafc4d7e-6086-4a8b-ad19-7b975db2f6f2]: FINISHED
+[debug] [2021-10-09T01:43:36.358Z] DEBUG: [runtime-status] [13788] Functions runtime initialized. {"cwd":"C:\\projeto\\vendaFacil\\functions","node_version":"10.15.3"}
+[debug] [2021-10-09T01:43:36.373Z] DEBUG: [runtime-status] [13788] Disabled runtime features: undefined
+[debug] [2021-10-09T01:43:36.373Z] DEBUG: [runtime-status] [13788] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.389Z] DEBUG: [runtime-status] [13788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.389Z] DEBUG: [runtime-status] [13788] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-10-09T01:43:36.389Z] DEBUG: [runtime-status] [13788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] Checked functions.config() {"config":{}}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.15.7","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.11.1","resolution":"C:\\projeto\\vendaFacil\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-10-09T01:43:36.576Z] DEBUG: [runtime-status] [13788] initializeApp(DEFAULT) {"apiKey":"AIzaSyB-hC7sLmz1Ix4fOCKWzIW1tBWCVw1IzLg","authDomain":"vendafacil-2d9db.firebaseapp.com","databaseURL":"https://vendafacil-2d9db.firebaseio.com","projectId":"vendafacil-2d9db","storageBucket":"vendafacil-2d9db.appspot.com","messagingSenderId":"866052965084","appId":"1:866052965084:web:fa109cafff53e1609baa19","measurementId":"G-7T83JPGM3G"}
+[debug] [2021-10-09T01:43:36.608Z] DEBUG: [worker-~diagnostic~-c1bb597f-6101-4a65-9fa6-2515d8671516]: IDLE

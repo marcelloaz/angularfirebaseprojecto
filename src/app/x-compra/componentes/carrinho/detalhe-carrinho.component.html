@@ -1,0 +1,151 @@
+<mat-card>
+
+    <mat-card-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row style="padding: 2.5em;">
+
+                <h1 style="font-size: xx-large; color: greenyellow;" mat-dialog-title>
+                    <span style="padding: 0em; margin-right: 0em;"> {{  totalAPagar | currency:'BRL':true:'1.2-2'}} </span>
+                </h1>
+                <span class="flexExpand"></span>
+                <!-- <div>
+                    <button style="margin-right: 0em;" mat-raised-button [routerLink]="['/venda']">
+                  <mat-icon>home</mat-icon>
+                  </button>
+                </div> -->
+
+
+
+
+            </mat-toolbar-row>
+
+            <mat-toolbar-row style="padding: 2.5em;">
+                <div style="padding:2em">
+
+                    <br>
+                    <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+                    <span class="flexExpand"></span>
+                    <!-- <div>
+                        <h1 style="font-size: xx-large; color: greenyellow;" mat-dialog-title>
+                            <span style="padding: 0em; margin-right: 0em;"> <small style="color: white;">Total a pagar: </small> {{  totalAPagar | currency:'BRL':true:'1.2-2'}} </span>
+                        </h1>
+                    </div> -->
+                </div>
+
+            </mat-toolbar-row>
+        </mat-toolbar>
+    </mat-card-content>
+</mat-card>
+
+<!-- <div>
+    <button mat-raised-button color="primary">
+<mat-icon>attach_money</mat-icon>  Finalizar Pedido
+</button>
+</div> -->
+
+<div class="section-content vcenter-container">
+
+    <div class="vcenter">
+
+        <section class="some-area fill-height-or-more">
+            <div>
+                <h1 style="color: cornsilk;"> <span class="material-icons">
+                    add_shopping_cart
+                    </span> Carrinho de Compas
+                </h1>
+                <!-- <p>Itens do Pedido</p> -->
+                <mat-card-content #divMouseOver>
+                    <div class="flex-container" fxLayout="column" class="cards">
+
+                        <a *ngFor="let item of itensCarrinho">
+                            <div class="card">
+                                <div fxLayoutAlign="center stretch" class="card-header" style="background-image: url('{./../../../../assets/almondegasemrecheio.jpg}');">
+                                    <img style="position: relative;
+                                              height: 15em;
+                                              width: 240px;
+                                              background-size: cover;
+                                              background-position: center;
+                                              background-color: rgb(121 86 86 / 50%);
+                                              background-blend-mode: overlay;
+                                              border-radius: 10px 10px 0px 0px;" [src]="item.imagemURL" alt="" />
+                                </div>
+                                <div fxLayout="row" class="card-header" id="card_delimiter">
+                                    <div style="font-size: large; max-width: -0.2em; padding-top: 0.2em;  margin-bottom: 0.2em; color: #2b2b2b; font-weight: bold;" fxFlex="20">
+                                        {{item?.nome}}
+                                    </div>
+
+
+                                    <div style=" font-size: small;
+                                      max-width: -0.2em;
+                                      margin-top: -0.1em;
+                                      padding-top: -14.8em;
+                                      margin-bottom: 1em;
+                                      color: #ff0000;
+                                      font-weight: bold;" fxFlex="20">
+                                        Qtd. <input type="number" [(ngModel)]="item.quantidade" (change)="modelChanged($event)" class="form-control" min="0" max="100" ormControlName="value" matInput name="value">
+                                        <br> VUP: {{item?.valor | currency:'BRL':true:'1.2-2'}}
+                                        <span class="flexExpand"></span>
+                                        <h1 style="color: mediumseagreen;">Total: {{ item.quantidade * item.valor | currency:'BRL':true:'1.2-2'}}</h1>
+                                    </div>
+
+
+
+
+                                    <span class="flexExpand"></span>
+
+                                    <div>
+                                        <button (click)="RemoverItemCarrinho()" mat-flat-button color="primary">
+                      <mat-icon>delete_forever</mat-icon>  Remover do Carrinho
+                    </button>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </mat-card-content>
+            </div>
+
+            <!-- <div style="padding: 2em;">
+                <h2>Siga-nos</h2>
+                <p><img width="120" style="pad: 1em;" alt="" src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png?w=300" class="wp-image-32834 aligncenter"></p>
+            </div>
+
+            <div style="padding: 2em;">
+                <h2>Senhor Bacon</h2>
+                <p>♨️Defumados Artesanais sem bruxarias♨️</p>
+                <p>📍Fabricados em Ibiraçu-ES</p>
+                <p>🚙 Entregas: Vitória, Vila Velha e Serra</p>
+
+
+                <a href="https://api.whatsapp.com/send?1=pt_BR&phone=5527997361548" target="_blank">
+                    <p> 👇🏼 Clique no link abaixo e faça seus pedidos</p>
+                </a>
+
+            </div>
+            <div>
+                <div>
+                    <div #divTexto1 style="padding: 2em;">
+                        <img width="180px" src="../../../../assets/logoPrincipal.svg">
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+
+            <div>
+                <div style="opacity: 80%; min-height: 8em;">
+                    <div #divTexto1 style="padding: 2em;">
+                        <p> Copyright © 2020 </p>
+                    </div>
+                </div>
+
+            </div> -->
+        </section>
+
+        <br>
+
+    </div>
+
+</div>
